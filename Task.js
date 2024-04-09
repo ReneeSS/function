@@ -22,8 +22,8 @@ returnNeighboringNumbers(0);
 function getMathResult(num1, num2) {
   let result = 0;
   let num3 = num1;
-  if(num2 <= 0 || num2 == NaN){
-    console.log(num1);
+  if(num2 <= 0 || typeof(num2) != "number"){
+    return num1;
   } else{
     for(let i = 1; i <= num2; i++){
       result = result + num3;
